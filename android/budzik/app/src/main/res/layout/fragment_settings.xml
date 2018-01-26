@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Light wake-up"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:padding="10dp"/>
+
+    <CheckBox
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:id="@+id/enable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn on light around wake up time"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minutes before alarm:" />
+
+    <EditText
+        android:id="@+id/time_before_alarm_minutes"
+        tools:text="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minutes after alarm:" />
+
+    <EditText
+        android:id="@+id/time_after_alarm_minutes"
+        tools:text="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+</LinearLayout>
